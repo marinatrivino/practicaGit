@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=3 uid="uid://fcg2kv43uenw"]
+[gd_scene load_steps=9 format=3 uid="uid://fcg2kv43uenw"]
 
 [ext_resource type="Texture2D" uid="uid://d1bwth30y2vr7" path="res://icon.svg" id="1_wtcfe"]
 
@@ -68,6 +68,17 @@ animations = [{
 "speed": 5.0
 }]
 
+[sub_resource type="SpriteFrames" id="SpriteFrames_d21ai"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_wtcfe")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
 [node name="Node2D" type="Node2D"]
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
@@ -94,3 +105,8 @@ sprite_frames = SubResource("SpriteFrames_q6r6c")
 [node name="AnimatedSprite2D6" type="AnimatedSprite2D" parent="."]
 position = Vector2(434, -8)
 sprite_frames = SubResource("SpriteFrames_kdubu")
+
+[node name="AnimatedSprite2D7" type="AnimatedSprite2D" parent="."]
+position = Vector2(224.5, 131.5)
+scale = Vector2(0.929688, 0.851563)
+sprite_frames = SubResource("SpriteFrames_d21ai")

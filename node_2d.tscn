@@ -1,4 +1,4 @@
-[gd_scene load_steps=4 format=3 uid="uid://fcg2kv43uenw"]
+[gd_scene load_steps=5 format=3 uid="uid://fcg2kv43uenw"]
 
 [ext_resource type="Texture2D" uid="uid://d1bwth30y2vr7" path="res://icon.svg" id="1_wtcfe"]
 
@@ -24,6 +24,17 @@ animations = [{
 "speed": 5.0
 }]
 
+[sub_resource type="SpriteFrames" id="SpriteFrames_epypp"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_wtcfe")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
 [node name="Node2D" type="Node2D"]
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
@@ -35,3 +46,6 @@ sprite_frames = SubResource("SpriteFrames_0e48y")
 position = Vector2(132.5, 97)
 scale = Vector2(0.460938, 1.60938)
 sprite_frames = SubResource("SpriteFrames_wtcfe")
+
+[node name="AnimatedSprite2D3" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_epypp")
